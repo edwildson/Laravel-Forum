@@ -17,7 +17,7 @@ RUN apt-get update \
       unzip
 
 # Install extensions
-RUN docker-php-ext-install pdo_mysql exif pcntl
+RUN docker-php-ext-install pdo_mysql php-sqlite3 exif pcntl
 RUN docker-php-ext-configure gd 
 RUN docker-php-ext-install gd
 
